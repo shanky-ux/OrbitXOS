@@ -56,6 +56,38 @@ The project follows a modular frontend structure:
 
 ---
 
+## 🤖 Machine Learning Integration
+
+OrbitXOS is designed to support integration of Machine Learning prediction modules through backend APIs.
+
+### 🔬 ML Workflow
+
+1. User provides input data.
+2. Frontend sends request to ML backend API.
+3. Backend loads trained model.
+4. Model performs inference.
+5. Prediction result is returned as JSON.
+6. OrbitXOS dynamically renders output in dashboard UI.
+
+### 🧠 Supported ML Architecture (Backend Example)
+
+OrbitXOS can integrate with:
+
+- FastAPI + PyTorch
+- Flask + Scikit-learn
+- Node.js + TensorFlow.js
+- Django REST + ML microservices
+
+### 📊 Example ML Use Cases
+
+- Classification models
+- Regression models
+- Recommendation systems
+- Anomaly detection
+- Computer vision models
+
+This makes OrbitXOS a flexible frontend interface for deploying and visualizing machine learning systems.
+
 ## 📂 Project Structure
 
 ```
