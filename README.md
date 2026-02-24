@@ -1,133 +1,59 @@
-# 🚀 OrbitXOS
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000428,50:004e92,100:000428&height=200&section=header&text=OrbitXOS&fontSize=45&fontColor=ffffff&animation=fadeIn&fontAlignY=35"/>
+</p>
 
-OrbitXOS is a modern space-themed web interface built using React, Vite, and Tailwind CSS.  
-It visualizes orbital data and integrates AI-powered prediction modules within an interactive dashboard experience.
+<p align="center">
+  <b>🚀 Space-Themed Interactive Web Dashboard with AI Integration</b>
+</p>
 
----
-
-## 🌌 Features
-
-- 🌠 Space-themed animated UI  
-- 🛰 Orbital visualization module  
-- 🤖 AI Predictor module  
-- 📊 Interactive dashboard pages  
-- 🎨 Responsive design with Tailwind CSS  
-- ⚡ Fast development powered by Vite  
-
----
-
-## 🛠 Tech Stack
-
-- **React**
-- **Vite**
-- **Tailwind CSS**
-- **JavaScript (ES6+)**
-- **PostCSS**
+<p align="center">
+  <img src="https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react"/>
+  <img src="https://img.shields.io/badge/Vite-Build%20Tool-646CFF?style=for-the-badge&logo=vite"/>
+  <img src="https://img.shields.io/badge/TailwindCSS-Styling-38B2AC?style=for-the-badge&logo=tailwind-css"/>
+  <img src="https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript"/>
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge"/>
+</p>
 
 ---
 
-## 📁 Project Structure
+## 📌 Overview
 
-```text
-OrbitXOS/
-│
-├── public/
-│   ├── background.JPG
-│   ├── logo.png
-│   ├── tle.txt
-│   └── vite.svg
-│
-├── src/
-│   ├── assets/
-│   │   ├── react.svg
-│   │   └── 05 (1).jpg
-│   │
-│   ├── components/
-│   │   ├── Navbar.jsx
-│   │   ├── OrbitMapPro.jsx
-│   │   └── StarfieldBackground.jsx
-│   │
-│   ├── pages/
-│   │   ├── Home.jsx
-│   │   ├── Dashboard.jsx
-│   │   ├── Predictions.jsx
-│   │   ├── AIPredictor.jsx
-│   │   └── About.jsx
-│   │
-│   ├── App.jsx
-│   ├── App.css
-│   ├── index.css
-│   └── main.jsx
-│
-├── index.html
-├── package.json
-├── postcss.config.js
-├── tailwind.config.js
-├── vite.config.js
-├── eslint.config.js
-└── README.md
-```
+OrbitXOS is a modern, space-themed web interface built using **React, Vite, and Tailwind CSS**.
+
+It visualizes orbital data and integrates AI-powered prediction modules within an interactive dashboard experience.  
+The project demonstrates advanced frontend design, modular architecture, and scalable UI structure.
 
 ---
 
-## 🚀 Getting Started
+## ✨ Key Features
 
-### 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/shanky-ux/OrbitXOS.git
-cd OrbitXOS
-```
-
-### 2️⃣ Install Dependencies
-
-```bash
-npm install
-```
-
-### 3️⃣ Run Development Server
-
-```bash
-npm run dev
-```
-
-### 4️⃣ Build for Production
-
-```bash
-npm run build
-```
+- 🚀 Space-themed animated UI
+- 🌌 Orbital visualization module
+- 🧠 AI predictor module integration
+- ⚡ Lightning-fast build using Vite
+- 🎨 Modern UI using Tailwind CSS
+- 🧩 Component-based React architecture
 
 ---
 
-## 🔮 Future Improvements
+## 🏗️ Architecture
 
-- Real-time satellite API integration  
-- Live orbital tracking system  
-- Backend AI model integration  
-- Authentication system  
-- CI/CD deployment pipeline  
+The project follows a modular frontend structure:
 
----
+1. **UI Layer**
+   - React components
+   - Tailwind CSS styling
+   - Responsive layout design
 
-## 📌 Deployment
+2. **Visualization Layer**
+   - Orbital data representation
+   - Interactive dashboard elements
+   - Real-time animation effects
 
-This project can be deployed easily using:
-
-- Vercel  
-- Netlify  
-- GitHub Pages  
-
-Deployment guide will be added soon.
+3. **AI Integration Layer**
+   - Connects to backend prediction APIs
+   - Displays prediction results dynamically
 
 ---
 
-## 👨‍💻 Author
-
-**Ravi Shankar**  
-GitHub: https://github.com/shanky-ux  
-
----
-
-## ⭐ Support
-
-If you like this project, consider giving it a ⭐ on GitHub.
+## 📂 Project Structure
