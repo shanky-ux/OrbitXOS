@@ -57,3 +57,166 @@ The project follows a modular frontend structure:
 ---
 
 ## 📂 Project Structure
+OrbitXOS/
+│
+├── public/ # Static files
+│ ├── favicon.ico
+│ └── images/
+│
+├── src/
+│ ├── components/ # Reusable UI components
+│ │ ├── Navbar.jsx
+│ │ ├── Sidebar.jsx
+│ │ ├── DashboardCard.jsx
+│ │ └── OrbitVisualization.jsx
+│ │
+│ ├── pages/ # Page-level components
+│ │ ├── Home.jsx
+│ │ ├── Dashboard.jsx
+│ │ └── Predictor.jsx
+│ │
+│ ├── assets/ # Images, icons, animations
+│ ├── hooks/ # Custom React hooks (optional)
+│ ├── utils/ # Utility functions
+│ ├── App.jsx # Root component
+│ └── main.jsx # Entry point
+│
+├── index.html # Root HTML template
+├── package.json # Project dependencies
+├── vite.config.js # Vite configuration
+├── tailwind.config.js # Tailwind configuration
+├── postcss.config.js # PostCSS configuration
+├── .gitignore
+├── LICENSE
+└── README.md
+
+---
+
+## 🧠 Core Components Explained
+
+### 🔹 App.jsx
+Acts as the root component of the application.  
+Handles routing, layout structure, and global state management.
+
+### 🔹 main.jsx
+Entry point of the React application.  
+Mounts the React app into the DOM using `createRoot()`.
+
+### 🔹 Navbar.jsx
+Top navigation bar containing:
+- Brand identity
+- Navigation links
+- Theme controls (if implemented)
+
+### 🔹 Sidebar.jsx
+Provides structured navigation between:
+- Dashboard
+- Orbit Visualization
+- AI Predictor module
+
+### 🔹 OrbitVisualization.jsx
+Responsible for:
+- Rendering orbital animations
+- Displaying space-themed visual elements
+- Managing real-time UI interactions
+
+### 🔹 Predictor.jsx
+Handles:
+- User input
+- API calls to backend AI model
+- Display of prediction results
+
+---
+
+## 🔄 Application Flow
+
+1. User opens the web application.
+2. React loads the main layout (Navbar + Sidebar + Page).
+3. User selects a module (Dashboard / Visualization / Predictor).
+4. Components dynamically render content.
+5. If AI module is triggered:
+   - API request is sent
+   - Backend processes prediction
+   - Result is returned and displayed.
+
+---
+
+## 📊 Technical Highlights
+
+- Component-based architecture
+- Separation of UI and logic
+- Fast hot-reload development using Vite
+- Utility-first styling with Tailwind CSS
+- Clean project organization for scalability
+- Ready for backend integration
+
+---
+
+## 🎨 Design System
+
+OrbitXOS follows a futuristic design system:
+
+- Dark space-themed background
+- Neon accent colors
+- Smooth transition animations
+- Responsive layout across devices
+- Modular UI components
+
+---
+
+## 🚀 Deployment Guide
+
+You can deploy OrbitXOS easily using:
+
+### 🔹 Vercel
+1. Push project to GitHub
+2. Import repository in Vercel
+3. Select Vite preset
+4. Deploy
+
+### 🔹 Netlify
+1. Connect GitHub repository
+2. Build command: `npm run build`
+3. Publish directory: `dist`
+
+---
+
+## 🔐 Environment Variables (If Backend Added)
+
+If integrating backend APIs, create a `.env` file: VITE_API_BASE_URL=https://your-backend-url.com
+
+Access inside React using: import.meta.env.VITE_API_BASE_URL
+
+---
+
+## 🧪 Possible Backend Stack (Optional)
+
+OrbitXOS can be extended with:
+
+- Node.js + Express
+- FastAPI
+- Flask
+- Django REST Framework
+
+---
+
+## 📈 Future Scope
+
+- Real-time satellite tracking
+- WebGL 3D orbital rendering
+- User authentication system
+- Role-based dashboard access
+- AI model visualization panel
+- Microservices architecture
+
+---
+
+## 🎯 Why This Project Stands Out
+
+- Combines UI design + AI integration
+- Demonstrates frontend engineering skills
+- Structured for scalability
+- Shows understanding of modular architecture
+- Production-ready frontend setup
+
+---
