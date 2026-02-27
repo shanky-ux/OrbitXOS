@@ -18,10 +18,17 @@
 
 ## 📌 Overview
 
-OrbitXOS is a modern space-themed web interface built using **React, Vite, and Tailwind CSS**.
+OrbitXOS is a modern, futuristic space-themed web dashboard built using **React, Vite, and Tailwind CSS**.
 
 It visualizes orbital data and integrates AI-powered prediction modules within an interactive dashboard experience.  
-The project demonstrates advanced frontend engineering, modular architecture, and scalable UI structure.
+The project demonstrates advanced frontend engineering, modular architecture, API integration readiness, and scalable UI design.
+
+---
+
+## 🌐 Live Demo
+
+🔗 Live Preview: https://your-live-link.vercel.app  
+📂 GitHub Repository: https://github.com/shanky-ux/OrbitXOS  
 
 ---
 
@@ -31,95 +38,107 @@ The project demonstrates advanced frontend engineering, modular architecture, an
 - 🌌 Orbital visualization module  
 - 🧠 AI predictor module integration  
 - ⚡ Fast development using Vite  
-- 🎨 Modern responsive UI with Tailwind CSS  
+- 🎨 Fully responsive Tailwind CSS design  
 - 🧩 Component-based React architecture  
+- 🔄 API-ready ML integration layer  
+
+---
+
+## 📸 Preview
+
+<p align="center">
+  <img src="public/images/dashboard-preview.png" width="900"/>
+</p>
 
 ---
 
 ## 🏗️ Architecture
 
-The project follows a modular frontend structure:
+OrbitXOS follows a modular frontend structure:
 
 ### 1️⃣ UI Layer
 - React components  
 - Tailwind CSS styling  
-- Responsive layout design  
+- Responsive layout system  
 
 ### 2️⃣ Visualization Layer
-- Orbital data representation  
+- Orbital data rendering  
 - Interactive dashboard elements  
 - Real-time animation effects  
 
 ### 3️⃣ AI Integration Layer
 - Connects to backend prediction APIs  
-- Displays prediction results dynamically  
+- Handles asynchronous requests  
+- Dynamically renders prediction results  
 
 ---
 
 ## 🤖 Machine Learning Integration
 
-OrbitXOS is designed to support integration of Machine Learning prediction modules through backend APIs.
+OrbitXOS is designed to support integration of Machine Learning models through backend APIs.
 
 ### 🔬 ML Workflow
 
-1. User provides input data.
-2. Frontend sends request to ML backend API.
-3. Backend loads trained model.
-4. Model performs inference.
-5. Prediction result is returned as JSON.
-6. OrbitXOS dynamically renders output in dashboard UI.
+1. User provides input data  
+2. Frontend sends request to ML backend API  
+3. Backend loads trained model  
+4. Model performs inference  
+5. Prediction result is returned as JSON  
+6. OrbitXOS dynamically renders output in the dashboard  
 
-### 🧠 Supported ML Architecture (Backend Example)
+---
+
+### 🧠 Supported Backend Architectures
 
 OrbitXOS can integrate with:
 
-- FastAPI + PyTorch
-- Flask + Scikit-learn
-- Node.js + TensorFlow.js
-- Django REST + ML microservices
+- FastAPI + PyTorch  
+- Flask + Scikit-learn  
+- Node.js + TensorFlow.js  
+- Django REST + ML microservices  
+
+---
 
 ### 📊 Example ML Use Cases
 
-- Classification models
-- Regression models
-- Recommendation systems
-- Anomaly detection
-- Computer vision models
+- Classification models  
+- Regression models  
+- Recommendation systems  
+- Anomaly detection  
+- Computer vision inference  
 
-This makes OrbitXOS a flexible frontend interface for deploying and visualizing machine learning systems.
+---
 
 ## 📂 Project Structure
 
 ```
 OrbitXOS/
 │
-├── public/                     # Static files
-│   ├── favicon.ico
+├── public/
 │   └── images/
 │
 ├── src/
-│   ├── components/             # Reusable UI components
+│   ├── components/
 │   │   ├── Navbar.jsx
 │   │   ├── Sidebar.jsx
 │   │   ├── DashboardCard.jsx
 │   │   └── OrbitVisualization.jsx
 │   │
-│   ├── pages/                  # Page-level components
+│   ├── pages/
 │   │   ├── Home.jsx
 │   │   ├── Dashboard.jsx
 │   │   └── Predictor.jsx
 │   │
-│   ├── assets/                 # Images, icons, animations
-│   ├── hooks/                  # Custom React hooks (optional)
-│   ├── utils/                  # Utility functions
-│   ├── App.jsx                 # Root component
-│   └── main.jsx                # Entry point
+│   ├── hooks/
+│   ├── utils/
+│   ├── App.jsx
+│   └── main.jsx
 │
-├── index.html                  # Root HTML template
-├── package.json                # Project dependencies
-├── vite.config.js              # Vite configuration
-├── tailwind.config.js          # Tailwind configuration
-├── postcss.config.js           # PostCSS configuration
+├── index.html
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+├── postcss.config.js
 ├── .gitignore
 ├── LICENSE
 └── README.md
@@ -127,52 +146,54 @@ OrbitXOS/
 
 ---
 
-## 🧠 Core Components Explained
+## 🧠 Core Components
 
-### 🔹 App.jsx
-Acts as the root component.  
-Manages layout structure and routing.
-
-### 🔹 main.jsx
-Application entry point.  
-Mounts React into the DOM.
-
-### 🔹 Navbar.jsx
-Top navigation bar with branding and navigation links.
-
-### 🔹 Sidebar.jsx
-Handles structured navigation between dashboard modules.
-
-### 🔹 OrbitVisualization.jsx
-Manages orbital animation logic and visualization rendering.
-
-### 🔹 Predictor.jsx
-Handles API interaction and displays AI prediction results.
+- **App.jsx** – Root component managing layout & routing  
+- **main.jsx** – Entry point mounting React to DOM  
+- **Navbar.jsx** – Top navigation system  
+- **Sidebar.jsx** – Module-based structured navigation  
+- **OrbitVisualization.jsx** – Orbital animation & rendering logic  
+- **Predictor.jsx** – API integration & AI result rendering  
 
 ---
 
 ## 🔄 Application Flow
 
-1. User opens the application.  
-2. React loads layout components (Navbar + Sidebar + Page).  
-3. User selects a module.  
-4. Components dynamically render content.  
-5. If AI module is triggered:
+1. Application loads core layout (Navbar + Sidebar + Page)  
+2. User selects dashboard module  
+3. Components dynamically render data  
+4. If AI module is triggered:
    - API request is sent  
    - Backend processes prediction  
-   - Result is displayed in UI  
+   - JSON response is displayed in UI  
 
 ---
 
 ## 🛠 Tech Stack
 
-| Category | Technology |
-|----------|------------|
-| Frontend | React |
-| Build Tool | Vite |
-| Styling | Tailwind CSS |
-| Language | JavaScript (ES6+) |
-| Theme | Space / Futuristic UI |
+| Layer | Technology | Purpose |
+|-------|------------|----------|
+| UI Library | React | Component-based architecture |
+| Build Tool | Vite | Fast bundling & development |
+| Styling | Tailwind CSS | Utility-first design |
+| Language | JavaScript (ES6+) | Application logic |
+| Architecture | Modular Design | Scalable frontend structure |
+
+---
+
+## 🔐 Environment Variables
+
+If connecting to backend ML API, create a `.env` file:
+
+```
+VITE_API_BASE_URL=http://localhost:8000
+```
+
+Access inside application:
+
+```js
+const baseURL = import.meta.env.VITE_API_BASE_URL;
+```
 
 ---
 
@@ -181,7 +202,7 @@ Handles API interaction and displays AI prediction results.
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/OrbitXOS.git
+git clone https://github.com/shanky-ux/OrbitXOS.git
 cd OrbitXOS
 ```
 
@@ -197,7 +218,7 @@ npm install
 npm run dev
 ```
 
-App will start at:
+Application runs at:
 
 ```
 http://localhost:5173
@@ -207,16 +228,15 @@ http://localhost:5173
 
 ## 🚀 Deployment
 
-You can deploy OrbitXOS using:
+Deploy OrbitXOS using:
 
 ### 🔹 Vercel
-- Connect GitHub repository  
 - Build command: `npm run build`  
-- Output directory: `dist`
+- Output directory: `dist`  
 
 ### 🔹 Netlify
 - Build command: `npm run build`  
-- Publish directory: `dist`
+- Publish directory: `dist`  
 
 ---
 
@@ -226,14 +246,14 @@ You can deploy OrbitXOS using:
 - WebGL-based 3D orbital rendering  
 - Authentication system  
 - Backend microservice integration  
-- AI visualization dashboard  
-- Theme customization (Dark/Light toggle)  
+- AI analytics dashboard  
+- Dark/Light theme toggle  
 
 ---
 
 ## 🎯 Why This Project Stands Out
 
-- Combines UI design + AI integration  
+- Combines UI engineering + AI integration  
 - Demonstrates scalable React architecture  
 - Production-ready frontend setup  
 - Clean modular structure  
@@ -241,11 +261,22 @@ You can deploy OrbitXOS using:
 
 ---
 
+## 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository  
+2. Create a new branch  
+3. Commit your changes  
+4. Push and open a Pull Request  
+
+---
+
 ## 👨‍💻 Author
 
 **Ravi Shankar**  
-B.Tech CSE (AIML)  
-Frontend & AI Enthusiast  
+B.Tech Computer Science (AIML)  
+Frontend Developer | AI Enthusiast  
 
 GitHub: https://github.com/shanky-ux  
 
