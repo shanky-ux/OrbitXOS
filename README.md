@@ -27,7 +27,7 @@ The project demonstrates advanced frontend engineering, modular architecture, AP
 
 ## 🌐 Live Demo
 
-🔗 Live Preview: https://your-live-link.vercel.app  
+🔗 Live Preview: [https://your-live-link.vercel.app](https://orbitxos-5b09.onrender.com/)  
 📂 GitHub Repository: https://github.com/shanky-ux/OrbitXOS  
 
 ---
