@@ -11,54 +11,56 @@
   <img src="https://img.shields.io/badge/Vite-Build%20Tool-646CFF?style=for-the-badge&logo=vite"/>
   <img src="https://img.shields.io/badge/TailwindCSS-Styling-38B2AC?style=for-the-badge&logo=tailwind-css"/>
   <img src="https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript"/>
-  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Status-Actively%20Maintained-brightgreen?style=for-the-badge"/>
 </p>
 
 ---
 
 ## 📌 Overview
 
-OrbitXOS is a modern, futuristic space-themed web dashboard built using **React, Vite, and Tailwind CSS**.
+OrbitXOS is a futuristic, space-inspired interactive web dashboard built using React, Vite, and Tailwind CSS.
 
-It visualizes orbital data and integrates AI-powered prediction modules within an interactive dashboard experience.  
-The project demonstrates advanced frontend engineering, modular architecture, API integration readiness, and scalable UI design.
+It combines advanced frontend engineering with AI prediction integration capability in a modular and scalable architecture. The project demonstrates SaaS-style UI development with backend-ready ML integration.
 
 ---
 
-## 🌐 Live Demo
+## 🚀 Development Status
 
-🔗 Live Preview: [https://your-live-link.vercel.app](https://orbitxos-5b09.onrender.com/)  
-📂 GitHub Repository: https://github.com/shanky-ux/OrbitXOS  
+OrbitXOS is actively maintained and continuously improved.
+
+Ongoing improvements include:
+
+- UI refinements  
+- Performance optimization  
+- API integration testing  
+- Component refactoring  
+- Animation enhancements  
+- Codebase cleanup  
+
+Regular commits are pushed to ensure consistent development and long-term scalability.
 
 ---
 
 ## ✨ Key Features
 
-- 🚀 Space-themed animated UI  
+- 🚀 Space-themed animated dashboard  
 - 🌌 Orbital visualization module  
-- 🧠 AI predictor module integration  
-- ⚡ Fast development using Vite  
+- 🧠 AI predictor integration  
+- ⚡ Fast development powered by Vite  
 - 🎨 Fully responsive Tailwind CSS design  
-- 🧩 Component-based React architecture  
-- 🔄 API-ready ML integration layer  
+- 🧩 Modular component-based architecture  
+- 🔄 Backend-ready ML API structure  
 
 ---
 
-## 📸 Preview
+## 🧠 Architecture Design
 
-<p align="center">
-  <img src="public/images/dashboard-preview.png" width="900"/>
-</p>
-
----
-
-## 🏗️ Architecture
-
-OrbitXOS follows a modular frontend structure:
+OrbitXOS follows a scalable modular frontend structure:
 
 ### 1️⃣ UI Layer
-- React components  
+- React functional components  
 - Tailwind CSS styling  
+- Reusable and isolated modules  
 - Responsive layout system  
 
 ### 2️⃣ Visualization Layer
@@ -67,39 +69,34 @@ OrbitXOS follows a modular frontend structure:
 - Real-time animation effects  
 
 ### 3️⃣ AI Integration Layer
-- Connects to backend prediction APIs  
-- Handles asynchronous requests  
-- Dynamically renders prediction results  
+- Asynchronous API communication  
+- Environment-based configuration  
+- JSON prediction rendering  
+- Error handling and loading states  
 
 ---
 
 ## 🤖 Machine Learning Integration
 
-OrbitXOS is designed to support integration of Machine Learning models through backend APIs.
+OrbitXOS is designed to integrate seamlessly with backend ML services.
 
-### 🔬 ML Workflow
+### ML Workflow
 
-1. User provides input data  
-2. Frontend sends request to ML backend API  
-3. Backend loads trained model  
+1. User inputs data  
+2. Frontend sends request to backend API  
+3. Backend loads trained ML model  
 4. Model performs inference  
-5. Prediction result is returned as JSON  
-6. OrbitXOS dynamically renders output in the dashboard  
+5. JSON response is returned  
+6. Dashboard dynamically updates UI  
 
----
-
-### 🧠 Supported Backend Architectures
-
-OrbitXOS can integrate with:
+### Supported Backend Architectures
 
 - FastAPI + PyTorch  
 - Flask + Scikit-learn  
 - Node.js + TensorFlow.js  
 - Django REST + ML microservices  
 
----
-
-### 📊 Example ML Use Cases
+### Example ML Use Cases
 
 - Classification models  
 - Regression models  
@@ -146,50 +143,15 @@ OrbitXOS/
 
 ---
 
-## 🧠 Core Components
-
-- **App.jsx** – Root component managing layout & routing  
-- **main.jsx** – Entry point mounting React to DOM  
-- **Navbar.jsx** – Top navigation system  
-- **Sidebar.jsx** – Module-based structured navigation  
-- **OrbitVisualization.jsx** – Orbital animation & rendering logic  
-- **Predictor.jsx** – API integration & AI result rendering  
-
----
-
-## 🔄 Application Flow
-
-1. Application loads core layout (Navbar + Sidebar + Page)  
-2. User selects dashboard module  
-3. Components dynamically render data  
-4. If AI module is triggered:
-   - API request is sent  
-   - Backend processes prediction  
-   - JSON response is displayed in UI  
-
----
-
-## 🛠 Tech Stack
-
-| Layer | Technology | Purpose |
-|-------|------------|----------|
-| UI Library | React | Component-based architecture |
-| Build Tool | Vite | Fast bundling & development |
-| Styling | Tailwind CSS | Utility-first design |
-| Language | JavaScript (ES6+) | Application logic |
-| Architecture | Modular Design | Scalable frontend structure |
-
----
-
 ## 🔐 Environment Variables
 
-If connecting to backend ML API, create a `.env` file:
+Create a `.env` file in root directory:
 
 ```
 VITE_API_BASE_URL=http://localhost:8000
 ```
 
-Access inside application:
+Access inside project:
 
 ```js
 const baseURL = import.meta.env.VITE_API_BASE_URL;
@@ -199,20 +161,20 @@ const baseURL = import.meta.env.VITE_API_BASE_URL;
 
 ## ⚙️ Installation & Setup
 
-### 1️⃣ Clone Repository
+Clone the repository:
 
 ```bash
 git clone https://github.com/shanky-ux/OrbitXOS.git
 cd OrbitXOS
 ```
 
-### 2️⃣ Install Dependencies
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-### 3️⃣ Run Development Server
+Run development server:
 
 ```bash
 npm run dev
@@ -228,36 +190,52 @@ http://localhost:5173
 
 ## 🚀 Deployment
 
-Deploy OrbitXOS using:
+OrbitXOS can be deployed using:
 
 ### 🔹 Vercel
-- Build command: `npm run build`  
-- Output directory: `dist`  
+- Build command: npm run build  
+- Output directory: dist  
 
 ### 🔹 Netlify
-- Build command: `npm run build`  
-- Publish directory: `dist`  
+- Build command: npm run build  
+- Publish directory: dist  
 
 ---
 
 ## 📈 Future Enhancements
 
-- Real-time satellite tracking  
-- WebGL-based 3D orbital rendering  
-- Authentication system  
-- Backend microservice integration  
-- AI analytics dashboard  
-- Dark/Light theme toggle  
+- 🌍 Real-time satellite tracking  
+- 🛰 WebGL-based 3D orbital simulation  
+- 🔐 Authentication system  
+- 📊 AI analytics dashboard  
+- 🌙 Dark/Light theme toggle  
+- ☁️ Cloud backend integration  
 
 ---
 
 ## 🎯 Why This Project Stands Out
 
-- Combines UI engineering + AI integration  
+- Combines modern UI engineering with AI integration  
 - Demonstrates scalable React architecture  
-- Production-ready frontend setup  
+- Production-ready frontend configuration  
 - Clean modular structure  
 - Portfolio-ready SaaS-style interface  
+
+---
+
+## 📅 Development Log
+
+This section is updated regularly to maintain active development:
+
+- UI spacing refinements  
+- Sidebar performance improvements  
+- Optimized API error handling  
+- Refactored visualization logic  
+- Improved Tailwind configuration  
+- Component reusability enhancements  
+- Performance tuning  
+
+(Continuously evolving)
 
 ---
 
@@ -267,14 +245,14 @@ Contributions are welcome.
 
 1. Fork the repository  
 2. Create a new branch  
-3. Commit your changes  
+3. Commit changes  
 4. Push and open a Pull Request  
 
 ---
 
 ## 👨‍💻 Author
 
-**Ravi Shankar**  
+Ravi Shankar  
 B.Tech Computer Science (AIML)  
 Frontend Developer | AI Enthusiast  
 
