@@ -24,6 +24,132 @@ It combines advanced frontend engineering with AI prediction integration capabil
 
 ---
 
+## 🏗️ System Architecture
+
+```mermaid
+flowchart TD
+
+    A[👤 User / Client Browser] --> B[⚛ React Frontend (Vite)]
+    B --> C[🎨 UI Layer - Components]
+    C --> D[📊 Visualization Layer]
+    C --> E[🧠 AI Integration Layer]
+
+    E --> F[🌐 API Service Layer]
+    F --> G[🚀 Backend Server (FastAPI / Flask)]
+
+    G --> H[📦 ML Model Loader]
+    H --> I[🤖 Trained ML Model]
+    I --> J[📤 Prediction Output]
+
+    J --> G
+    G --> F
+    F --> E
+    E --> C
+    C --> B
+    B --> K[⚡ Dynamic Dashboard Update]
+
+    D --> K
+```
+
+---
+
+## 🔄 End-to-End Processing Flow
+
+```mermaid
+flowchart TD
+
+    A[User Input] --> B[React UI]
+    B --> C[Validate & Format Data]
+    C --> D[Send API Request]
+    D --> E[Backend Processing]
+    E --> F[Load ML Model]
+    F --> G[Run Inference]
+    G --> H[Generate JSON Response]
+    H --> I[Frontend Receives Response]
+    I --> J[Update Dashboard UI]
+```
+
+---
+
+## ☁️ Cloud Execution Flow
+
+```mermaid
+flowchart LR
+
+    User --> CDN
+    CDN --> Frontend
+    Frontend --> API
+    API --> Backend
+    Backend --> MLModel
+    Backend --> Database
+    Backend --> Cache
+    MLModel --> Backend
+    Backend --> API
+    API --> Frontend
+    Frontend --> User
+
+    subgraph Frontend Layer
+        Frontend[React + Tailwind Dashboard]
+    end
+
+    subgraph Backend Layer
+        Backend[FastAPI / Flask Server]
+        MLModel[ML Inference Engine]
+        Database[(Database)]
+        Cache[(Redis Cache)]
+    end
+
+    subgraph Cloud Layer
+        CDN[Content Delivery Network]
+    end
+```
+
+---
+
+## 🔁 Request Lifecycle
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant F as React Frontend
+    participant A as API Layer
+    participant B as Backend Server
+    participant M as ML Model
+
+    U->>F: Enter Input Data
+    F->>A: POST /predict
+    A->>B: Forward Request
+    B->>M: Run Model Inference
+    M-->>B: Prediction Result
+    B-->>A: JSON Response
+    A-->>F: Return Data
+    F-->>U: Update Dashboard
+```
+
+---
+
+## 🧩 Component Architecture
+
+```mermaid
+flowchart TB
+
+    App --> Navbar
+    App --> Sidebar
+    App --> Pages
+
+    Pages --> Home
+    Pages --> Dashboard
+    Pages --> Predictor
+
+    Dashboard --> DashboardCard
+    Dashboard --> OrbitVisualization
+
+    Predictor --> APIService
+    APIService --> Backend
+```
+
+---
+
 ## 🚀 Development Status
 
 OrbitXOS is actively maintained and continuously improved.
@@ -53,29 +179,6 @@ Regular commits are pushed to ensure consistent development and long-term scalab
 
 ---
 
-## 🧠 Architecture Design
-
-OrbitXOS follows a scalable modular frontend structure:
-
-### 1️⃣ UI Layer
-- React functional components  
-- Tailwind CSS styling  
-- Reusable and isolated modules  
-- Responsive layout system  
-
-### 2️⃣ Visualization Layer
-- Orbital data rendering  
-- Interactive dashboard elements  
-- Real-time animation effects  
-
-### 3️⃣ AI Integration Layer
-- Asynchronous API communication  
-- Environment-based configuration  
-- JSON prediction rendering  
-- Error handling and loading states  
-
----
-
 ## 🤖 Machine Learning Integration
 
 OrbitXOS is designed to integrate seamlessly with backend ML services.
@@ -96,14 +199,6 @@ OrbitXOS is designed to integrate seamlessly with backend ML services.
 - Node.js + TensorFlow.js  
 - Django REST + ML microservices  
 
-### Example ML Use Cases
-
-- Classification models  
-- Regression models  
-- Recommendation systems  
-- Anomaly detection  
-- Computer vision inference  
-
 ---
 
 ## 📂 Project Structure
@@ -113,31 +208,18 @@ OrbitXOS/
 │
 ├── public/
 │   └── images/
-│
 ├── src/
 │   ├── components/
-│   │   ├── Navbar.jsx
-│   │   ├── Sidebar.jsx
-│   │   ├── DashboardCard.jsx
-│   │   └── OrbitVisualization.jsx
-│   │
 │   ├── pages/
-│   │   ├── Home.jsx
-│   │   ├── Dashboard.jsx
-│   │   └── Predictor.jsx
-│   │
 │   ├── hooks/
 │   ├── utils/
 │   ├── App.jsx
 │   └── main.jsx
-│
 ├── index.html
 ├── package.json
 ├── vite.config.js
 ├── tailwind.config.js
 ├── postcss.config.js
-├── .gitignore
-├── LICENSE
 └── README.md
 ```
 
@@ -145,7 +227,7 @@ OrbitXOS/
 
 ## 🔐 Environment Variables
 
-Create a `.env` file in root directory:
+Create a `.env` file:
 
 ```
 VITE_API_BASE_URL=http://localhost:8000
@@ -161,26 +243,14 @@ const baseURL = import.meta.env.VITE_API_BASE_URL;
 
 ## ⚙️ Installation & Setup
 
-Clone the repository:
-
 ```bash
 git clone https://github.com/shanky-ux/OrbitXOS.git
 cd OrbitXOS
-```
-
-Install dependencies:
-
-```bash
 npm install
-```
-
-Run development server:
-
-```bash
 npm run dev
 ```
 
-Application runs at:
+App runs at:
 
 ```
 http://localhost:5173
@@ -190,15 +260,13 @@ http://localhost:5173
 
 ## 🚀 Deployment
 
-OrbitXOS can be deployed using:
-
 ### 🔹 Vercel
-- Build command: npm run build  
-- Output directory: dist  
+- Build: `npm run build`
+- Output: `dist`
 
 ### 🔹 Netlify
-- Build command: npm run build  
-- Publish directory: dist  
+- Build: `npm run build`
+- Publish: `dist`
 
 ---
 
@@ -215,38 +283,11 @@ OrbitXOS can be deployed using:
 
 ## 🎯 Why This Project Stands Out
 
-- Combines modern UI engineering with AI integration  
-- Demonstrates scalable React architecture  
-- Production-ready frontend configuration  
-- Clean modular structure  
-- Portfolio-ready SaaS-style interface  
-
----
-
-## 📅 Development Log
-
-This section is updated regularly to maintain active development:
-
-- UI spacing refinements  
-- Sidebar performance improvements  
-- Optimized API error handling  
-- Refactored visualization logic  
-- Improved Tailwind configuration  
-- Component reusability enhancements  
-- Performance tuning  
-
-(Continuously evolving)
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome.
-
-1. Fork the repository  
-2. Create a new branch  
-3. Commit changes  
-4. Push and open a Pull Request  
+- Modern SaaS-level UI architecture  
+- Clean modular React structure  
+- Backend-ready AI integration  
+- Scalable production configuration  
+- Portfolio-ready professional presentation  
 
 ---
 
