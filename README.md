@@ -24,42 +24,42 @@ It combines advanced frontend engineering with AI prediction integration capabil
 
 ---
 
-## 🏗️ System Architecture
+# 🏗️ System Architecture
 
 ```mermaid
 flowchart TD
 
-    A[👤 User / Client Browser] --> B[⚛ React Frontend (Vite)]
-    B --> C[🎨 UI Layer - Components]
-    C --> D[📊 Visualization Layer]
-    C --> E[🧠 AI Integration Layer]
+    A[User / Client Browser] --> B[React Frontend - Vite]
+    B --> C[UI Layer - Components]
+    C --> D[Visualization Layer]
+    C --> E[AI Integration Layer]
 
-    E --> F[🌐 API Service Layer]
-    F --> G[🚀 Backend Server (FastAPI / Flask)]
+    E --> F[API Service Layer]
+    F --> G[Backend Server - FastAPI or Flask]
 
-    G --> H[📦 ML Model Loader]
-    H --> I[🤖 Trained ML Model]
-    I --> J[📤 Prediction Output]
+    G --> H[ML Model Loader]
+    H --> I[Trained ML Model]
+    I --> J[Prediction Output]
 
     J --> G
     G --> F
     F --> E
     E --> C
     C --> B
-    B --> K[⚡ Dynamic Dashboard Update]
+    B --> K[Dynamic Dashboard Update]
 
     D --> K
 ```
 
 ---
 
-## 🔄 End-to-End Processing Flow
+# 🔄 End-to-End Processing Flow
 
 ```mermaid
 flowchart TD
 
     A[User Input] --> B[React UI]
-    B --> C[Validate & Format Data]
+    B --> C[Validate and Format Data]
     C --> D[Send API Request]
     D --> E[Backend Processing]
     E --> F[Load ML Model]
@@ -71,7 +71,7 @@ flowchart TD
 
 ---
 
-## ☁️ Cloud Execution Flow
+# ☁️ Cloud Execution Flow
 
 ```mermaid
 flowchart LR
@@ -88,25 +88,25 @@ flowchart LR
     API --> Frontend
     Frontend --> User
 
-    subgraph Frontend Layer
+    subgraph Frontend_Layer
         Frontend[React + Tailwind Dashboard]
     end
 
-    subgraph Backend Layer
-        Backend[FastAPI / Flask Server]
+    subgraph Backend_Layer
+        Backend[FastAPI or Flask Server]
         MLModel[ML Inference Engine]
         Database[(Database)]
         Cache[(Redis Cache)]
     end
 
-    subgraph Cloud Layer
+    subgraph Cloud_Layer
         CDN[Content Delivery Network]
     end
 ```
 
 ---
 
-## 🔁 Request Lifecycle
+# 🔁 Request Lifecycle
 
 ```mermaid
 sequenceDiagram
@@ -128,29 +128,7 @@ sequenceDiagram
 
 ---
 
-## 🧩 Component Architecture
-
-```mermaid
-flowchart TB
-
-    App --> Navbar
-    App --> Sidebar
-    App --> Pages
-
-    Pages --> Home
-    Pages --> Dashboard
-    Pages --> Predictor
-
-    Dashboard --> DashboardCard
-    Dashboard --> OrbitVisualization
-
-    Predictor --> APIService
-    APIService --> Backend
-```
-
----
-
-## 🚀 Development Status
+# 🚀 Development Status
 
 OrbitXOS is actively maintained and continuously improved.
 
@@ -167,19 +145,19 @@ Regular commits are pushed to ensure consistent development and long-term scalab
 
 ---
 
-## ✨ Key Features
+# ✨ Key Features
 
-- 🚀 Space-themed animated dashboard  
-- 🌌 Orbital visualization module  
-- 🧠 AI predictor integration  
-- ⚡ Fast development powered by Vite  
-- 🎨 Fully responsive Tailwind CSS design  
-- 🧩 Modular component-based architecture  
-- 🔄 Backend-ready ML API structure  
+- Space-themed animated dashboard  
+- Orbital visualization module  
+- AI predictor integration  
+- Fast development powered by Vite  
+- Fully responsive Tailwind CSS design  
+- Modular component-based architecture  
+- Backend-ready ML API structure  
 
 ---
 
-## 🤖 Machine Learning Integration
+# 🤖 Machine Learning Integration
 
 OrbitXOS is designed to integrate seamlessly with backend ML services.
 
@@ -201,13 +179,14 @@ OrbitXOS is designed to integrate seamlessly with backend ML services.
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```
 OrbitXOS/
 │
 ├── public/
 │   └── images/
+│
 ├── src/
 │   ├── components/
 │   ├── pages/
@@ -215,6 +194,7 @@ OrbitXOS/
 │   ├── utils/
 │   ├── App.jsx
 │   └── main.jsx
+│
 ├── index.html
 ├── package.json
 ├── vite.config.js
@@ -225,15 +205,15 @@ OrbitXOS/
 
 ---
 
-## 🔐 Environment Variables
+# 🔐 Environment Variables
 
-Create a `.env` file:
+Create a `.env` file in the root directory:
 
 ```
 VITE_API_BASE_URL=http://localhost:8000
 ```
 
-Access inside project:
+Access inside the project:
 
 ```js
 const baseURL = import.meta.env.VITE_API_BASE_URL;
@@ -241,7 +221,7 @@ const baseURL = import.meta.env.VITE_API_BASE_URL;
 
 ---
 
-## ⚙️ Installation & Setup
+# ⚙️ Installation & Setup
 
 ```bash
 git clone https://github.com/shanky-ux/OrbitXOS.git
@@ -250,7 +230,7 @@ npm install
 npm run dev
 ```
 
-App runs at:
+Application runs at:
 
 ```
 http://localhost:5173
@@ -258,40 +238,40 @@ http://localhost:5173
 
 ---
 
-## 🚀 Deployment
+# 🚀 Deployment
 
-### 🔹 Vercel
-- Build: `npm run build`
-- Output: `dist`
+### Vercel
+- Build command: `npm run build`
+- Output directory: `dist`
 
-### 🔹 Netlify
-- Build: `npm run build`
-- Publish: `dist`
-
----
-
-## 📈 Future Enhancements
-
-- 🌍 Real-time satellite tracking  
-- 🛰 WebGL-based 3D orbital simulation  
-- 🔐 Authentication system  
-- 📊 AI analytics dashboard  
-- 🌙 Dark/Light theme toggle  
-- ☁️ Cloud backend integration  
+### Netlify
+- Build command: `npm run build`
+- Publish directory: `dist`
 
 ---
 
-## 🎯 Why This Project Stands Out
+# 📈 Future Enhancements
 
-- Modern SaaS-level UI architecture  
+- Real-time satellite tracking  
+- WebGL-based 3D orbital simulation  
+- Authentication system  
+- AI analytics dashboard  
+- Dark/Light theme toggle  
+- Cloud backend integration  
+
+---
+
+# 🎯 Why This Project Stands Out
+
+- Modern SaaS-style architecture  
 - Clean modular React structure  
 - Backend-ready AI integration  
-- Scalable production configuration  
-- Portfolio-ready professional presentation  
+- Production-ready configuration  
+- Portfolio-grade project presentation  
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 Ravi Shankar  
 B.Tech Computer Science (AIML)  
@@ -301,6 +281,6 @@ GitHub: https://github.com/shanky-ux
 
 ---
 
-## 📜 License
+# 📜 License
 
 This project is licensed under the MIT License.
