@@ -24,7 +24,7 @@ It combines advanced frontend engineering with AI prediction integration capabil
 
 ---
 
-# 🏗️ System Architecture
+# 🏗️ System Architectur
 
 ```mermaid
 flowchart TD
