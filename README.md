@@ -16,7 +16,7 @@
 
 ---
 
-## 📌 Overview
+## 📌 Overviews
 
 OrbitXOS is a futuristic, space-inspired interactive web dashboard built using React, Vite, and Tailwind CSS.
 
